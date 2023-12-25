@@ -32,7 +32,8 @@ class BinaryTree {
     b.right = e;
     c.right = f;
 
-    defthFirstTraversal(a!);
+    final values = _defthFirstTraversalRecursive(a);
+    print("Final values $values");
   }
 
   void defthFirstTraversal(Node<String> node) {
@@ -47,5 +48,15 @@ class BinaryTree {
         _stack.push(currentNode.left!);
       }
     }
+  }
+
+  List<T> _defthFirstTraversalRecursive<T>(Node<T>? node) {
+    if (node == null) return [];
+
+    final leftValues = _defthFirstTraversalRecursive(node.left);
+    print("left $leftValues");
+    final rightValues = _defthFirstTraversalRecursive(node.right);
+    print("right $rightValues}");
+    return [node.data, ...leftValues, ...rightValues];
   }
 }
