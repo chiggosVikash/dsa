@@ -2,8 +2,9 @@ import 'package:dsa/ds/binary_tree.dart';
 import 'package:dsa/recursion/recursion.dart';
 
 void main(List<String> arguments) {
-  // final binaryTree = BinaryTree();
-  final rec = Recursion();
+  final binaryTree = BinaryTree();
+
+  // final rec = Recursion();
   // final total = rec.factorial(5);
   // print("Fact value $total");
 
@@ -13,6 +14,6 @@ void main(List<String> arguments) {
   // final totalSum = rec.addNumberToBoundaryNo(5);
   // print("total sum $totalSum");
 
-  final reversedNo = rec.revNumer(1908);
-  print("reversed no $reversedNo");
+  // final reversedNo = rec.revNumer(1908);
+  // print("reversed no $reversedNo");
 }
